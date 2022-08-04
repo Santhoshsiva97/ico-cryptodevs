@@ -87,9 +87,9 @@ export default function Home() {
       const tokenContract = new Contract(
         TOKEN_CONTRACT_ADDRESS, TOKEN_CONTRACT_ABI, signer
       );
-      const _amount = amount * 0.001; //price per token
-      const tx = await tokenContract.mint({
-        value: utils.parseEther(_amount.toString()),
+      const value = amount * 0.001; //price per token
+      const tx = await tokenContract.mint(amount, {
+        value: utils.parseEther(value.toString()),
         gasLimit: utils.parseEther("0.0000000000001"),
       });
       setLoading(true);

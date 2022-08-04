@@ -1,5 +1,5 @@
 export const NFT_CONTRACT_ADDRESS = "0x1eF06280c1DE58c9C503a23e8547C00E7f18c2D9";
-export const TOKEN_CONTRACT_ADDRESS = "0xB497be1671c9a5Cd08841103fBe91340B7c560B1";
+export const TOKEN_CONTRACT_ADDRESS = "0x20Ec00aad74Dc3A7A67E6c5Bc632ef9Fac083E90";
 
 export const NFT_CONTRACT_ABI = [
   {
@@ -794,7 +794,7 @@ export const TOKEN_CONTRACT_ABI = [
   },
   {
     "inputs": [],
-    "name": "maxTokenSupply",
+    "name": "maxTotalSupply",
     "outputs": [
       {
         "internalType": "uint256",
