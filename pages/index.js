@@ -275,7 +275,7 @@ export default function Home() {
         <button
           className={styles.button}
           disabled={!(tokenAmount > 0)}
-          onClick={() => mintCryptoDevToken(tokenAmount)}
+          onClick={() => mintCryptoDevTokens(tokenAmount)}
         >
           Mint Tokens
         </button>
